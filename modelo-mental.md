@@ -73,7 +73,7 @@ Este archivo descriptor marca la raíz del proyecto y se puede leer sobre sus po
 
 Son paquetes que ayudan durante el desarrollo de una aplicación, por ejemplo, para minimizar el código, analizarlo o ejecutar pruebas. Estas dependencias normalmente no son necesarias para ejecutar la aplicación una vez terminada.
 
-Por ejemplo, en Node.js, se declaran en la sección `devDependencies` del archivo `package.json`, mientras que las dependencias necesarias para la ejecución se declaran en dependencias.
+Por ejemplo, en Node.js, se declaran en la sección `devDependencies` del archivo `package.json`, mientras que las dependencias necesarias para la ejecución se declaran en dependencies.
 
 | Tareas | ¿Qué hace? |
 | :--- | :--- |
