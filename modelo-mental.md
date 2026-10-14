@@ -79,6 +79,6 @@ Por ejemplo, en Node.js, se declaran en la sección `devDependencies` del archiv
 | :--- | :--- |
 | Minimizar el código | Reduce el tamaño del código eliminando espacios innecesarios y otros elementos que se pueden quitar. |
 | Analizar el código | Busca posibles errores o malas prácticas dentro del código |
-| Ejecutar pruebas unitarias | Compruebas que los módulos funcionen correctamente |
+| Ejecutar pruebas unitarias | Comprueba que los módulos funcionen correctamente |
 | Agrupar la aplicación | Organiza los módulos y sus dependencias para la aplicación |
 | Compilar el código | Traduce el código fuente a otro formato para poder utilizarlo en el entorno correspondiente |
