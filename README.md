@@ -9,7 +9,7 @@ Son componentes lógicos del código, como partes de un programa.
 Organiza un programa en partes identificables (**módulos**). Pero para que sean fáciles de modificar, reparar, depurar y mantener, generalmente conviene que estén lo más **desacoplados** posible (reducir el acoplamiento). En pocas palabras, deben ser componentes lo más independientes posibles para que, en caso de que se llegue a modificar un componente, este tenga menor probabilidad de afectar a otro.
 
 ### En el código
-Para hacer que los componentes sean lo más independientes posibles, debemos realizar una clara separación de sus funciones; generalmente se hace a través de lo que llamamos **interfaces**. Debemos hacer que entre componentes solo tengan la información necesaria para su funcionalidad. Cuanto menos depende uno del otro, más fácil se hará modificar los detalles internos.
+Para hacer que los componentes sean lo más independientes posibles, debemos realizar una clara separación de sus funciones; generalmente se hace a través de lo que llamamos **interfaces**. Debemos hacer que entre componentes solo tengan la información necesaria para su funcionalidad. Cuanto menos dependan unos módulos de otros, más fácil será modificar sus detalles internos., más fácil se hará modificar los detalles internos.
 
 ### En resumen
 La modularidad consiste en organizar un programa en partes identificables llamadas módulos. Los módulos son componentes lógicos que contienen código y forman parte del programa. Para facilitar su modificación, depuración y mantenimiento, conviene que estén lo menos acoplados posible, es decir, que dependan lo menos posible de los detalles internos de otros módulos. Para lograrlo, se utilizan interfaces que exponen los elementos necesarios para que otros componentes puedan utilizar un módulo sin conocer cómo funciona internamente.
@@ -25,7 +25,7 @@ Son componentes o recursos de los que tu código necesita depender para realizar
 Son unidades de código que se agrupan y distribuyen para reutilizar funcionalidades en diferentes proyectos.
 
 ### Dependencias Transitivas
-Llamada dependencia de una dependencia. Son los paquetes que nuestro proyecto necesita indirectamente porque alguna de sus dependencias directas los utiliza. Las dependencias forman un gráfico de relaciones en lugar de una simple lista de paquetes.
+Tambíén conocida como dependencia de una dependencia. Son los paquetes que nuestro proyecto necesita indirectamente porque alguna de sus dependencias directas los utiliza. Las dependencias forman un gráfico de relaciones en lugar de una simple lista de paquetes.
 
 ### Paquete de dependencias
 Son dependencias agrupadas y distribuidas en paquetes que contienen código reutilizable. Un proyecto puede incorporar paquetes externos como dependencias para reutilizar funcionalidades ya desarrolladas.
