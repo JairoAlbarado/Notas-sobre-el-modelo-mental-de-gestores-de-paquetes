@@ -53,3 +53,32 @@ Aunque SemVer establece reglas para identificar cambios incompatibles, los autor
 
 ### IMPORTANTE: dependencias transitivas
 Una dependencia directa puede depender de otros paquetes que no son compatibles con versiones más recientes. Esto puede impedir actualizar una dependencia transitiva (puede haber muchos casos, por ejemplo, una vulnerabilidad de seguridad). En estos casos, puede ser necesario adaptar el código de la dependencia directa y publicar la nueva versión compatible. Mientras más dependencias y relaciones existan entre paquetes, más difícil será gestionar sus versiones, resolver compatibilidades y mantener la seguridad del proyecto. q wbd :v
+
+# Archivos de manifiesto de dependencias:
+
+Es una lista de las dependencias del proyecto y sus versiones permitidas. Esencialmente, se trata de un archivo descriptor, ya que declara lo que necesita el proyecto.
+Por ejemplo, en Node.js, `package.json` sirve como un archivo descriptor que contiene no solo información sobre las dependencias, sino también información general del proyecto y su configuración.
+
+| Lenguaje o tecnología | Archivo descriptor | Función |
+| :--- | :--- | :--- |
+| Node.js (javascript) | `package.json` | Declara dependencias, versiones e información general del proyecto y su configuración |
+| Maven (java) | `pom.xml` | Describe la configuración de un proyecto Java, sus dependencias y cómo se construye. |
+| Python | `pyproject.toml` | Puede declarar metadatos del proyecto, dependencias y configuración de herramientas de desarrollo. |
+
+# Package.json:
+
+Este archivo descriptor marca la raíz del proyecto y se puede leer sobre sus posibilidades de configuración en la [documentación oficial de npm sobre package.json](https://docs.npmjs.com/cli/v10/configuring-npm/package-json).
+
+# Dependencias del desarrollo
+
+Son paquetes que ayudan durante el desarrollo de una aplicación, por ejemplo, para minimizar el código, analizarlo o ejecutar pruebas. Estas dependencias normalmente no son necesarias para ejecutar la aplicación una vez terminada.
+
+Por ejemplo, en Node.js, se declaran en la sección `devDependencies` del archivo `package.json`, mientras que las dependencias necesarias para la ejecución se declaran en dependencias.
+
+| Tareas | ¿Qué hace? |
+| :--- | :--- |
+| Minimizar el código | Reduce el tamaño del código eliminando espacios innecesarios y otros elementos que se pueden quitar. |
+| Analizar el código | Busca posibles errores o malas prácticas dentro del código |
+| Ejecutar pruebas unitarias | Compruebas que los módulos funcionen correctamente |
+| Agrupar la aplicación | Organiza los módulos y sus dependencias para la aplicación |
+| Compilar el código | Traduce el código fuente a otro formato para poder utilizarlo en el entorno correspondiente |
