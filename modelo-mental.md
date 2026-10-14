@@ -82,3 +82,28 @@ Por ejemplo, en Node.js, se declaran en la sección `devDependencies` del archiv
 | Ejecutar pruebas unitarias | Comprueba que los módulos funcionen correctamente |
 | Agrupar la aplicación | Organiza los módulos y sus dependencias para la aplicación |
 | Compilar el código | Traduce el código fuente a otro formato para poder utilizarlo en el entorno correspondiente |
+
+# Archivos lock (Archivos de bloqueo)
+
+Archivo lock: Es un archivo que registra las versiones concretas de las dependencias que un gestor de paquetes ha resuelto para un proyecto, junto con información sobre cómo se relacionan entre sí.
+
+¿Para qué sirve?
+
+1. Facilita que diferentes personas instalen las mismas versiones de las dependencias.
+2. Evita que una nueva instalación vuelva a resolver libremente todas las versiones cuando ya existe un archivo lock válido.
+3. Registra información del árbol de dependencias, incluidas las dependencias transitivas.
+4. Ayuda a detectar y analizar qué versiones de los paquetes utiliza un proyecto.
+
+Ejemplo en npm:
+
+`package-lock.json` es el archivo lock que utiliza npm.
+
+En `package.json` podemos declarar una dependencia así:
+
+`"react": "^19.2.4"`
+
+Mientras que en `package-lock.json` podemos encontrar la versión concreta resuelta:
+
+`"version": "19.2.4"`
+
+Esto significa que el proyecto permite un rango de versiones según la regla `^`, mientras que el archivo lock registra la versión que npm resolvió para esa instalación.
